@@ -3,7 +3,7 @@ name = "student-manager"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Chelsea Tchoumbe",email = "chelseafankam@gmail.com"}
+    {name = "Chelsea Tchoumbe",email = "chelseafankam@gmail.com"},
     {name="celeste tene" ,email= "mbogoumcelesta@gmail.com"}
 ]
 readme = "README.md"
@@ -17,3 +17,8 @@ packages = [{include = "student_manager", from = "src"}]
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
